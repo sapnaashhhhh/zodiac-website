@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap');
+
+body {
+    background: linear-gradient(to left, #0b0314 40%, #1e0e2b 60%);
+    color: rgb(162, 148, 65);
+    font-family: "Playfair Display", serif;
+}
+
+#container {
+    width: 80%;
+    height: 700px;
+    font-size: 20px;
+    background-color: rgba(12, 5, 20, 0.9);
+    color: #d4af7a;
+    margin: auto;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid rgba(255, 215, 0, 0.3);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+}
+
+#header {
+    height: 70px;
+    line-height: 70px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #f5e6c3;
+    background: rgba(20, 10, 30, 0.8);
+    border-bottom: 2px solid rgba(255, 215, 0, 0.5);
+}
+
+#selectionarea {
+    padding-left: 20px;
+    font-weight: bold;
+    color: #c08ed9;
+}
+
+#horoscopetxt {
+    height: 450px;
+    padding: 15px;
+    border: 2px solid rgba(255, 215, 0, 0.3);
+    color: #f5e6c3;
+    background: rgba(10, 5, 25, 0.9);
+    border-radius: 10px;
+}
+
+#textrow2 {
+    font-size: 20px;
+    font-family: "Cormorant Garamond", serif;
+    color: #f5e6c3;
+    user-select: none;
+    animation: fadeIn 1.5s ease-in-out;
+    white-space: pre-wrap; /* Preserve line breaks and wrap text */
+    overflow-y: auto; /* Add scrollbar if content overflows */
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    margin: 0;
+}
+
+#horoscope {
+    font-size: 24px;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    color: #d4af7a;
+    background: rgba(100, 40, 120, 0.6);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(255, 215, 0, 0.5);
+    border-radius: 15px;
+    padding: 10px 20px;
+    border: 2px solid rgba(255, 215, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#horoscope:hover {
+    background: rgba(120, 50, 140, 0.8);
+    box-shadow: 0 12px 16px 0 rgba(255, 215, 0, 0.4), 0 17px 50px 0 rgba(255, 215, 0, 0.5);
+    transform: scale(1.05);
+}
+
+#restartbtn {
+    float: right;
+    font-size: 22px;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    color: #f5e6c3;
+    background: black;
+    border-radius: 15px;
+    padding: 8px 16px;
+    border: 2px solid rgba(255, 215, 0, 0.5);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(255, 215, 0, 0.6);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#restartbtn:hover {
+    background: rgba(30, 10, 50, 0.8);
+    box-shadow: 0 12px 16px 0 rgba(255, 215, 0, 0.5), 0 17px 50px 0 rgba(255, 215, 0, 0.5);
+    transform: scale(1.05);
+}
+
+.txtheader {
+    font-size: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #a0791e;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+    animation: glowText 2s infinite alternate;
+}
+
+@keyframes glowText {
+    0% { text-shadow: 0 0 5px rgba(255, 215, 0, 0.3); }
+    100% { text-shadow: 0 0 15px rgba(255, 215, 0, 0.7); }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.horo-content {
+    display: flex;
+}
+
+#img_horo img {
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+#img_horo img:hover {
+    box-shadow: 0 12px 16px 0 rgba(255, 215, 0, 0.4), 0 17px 50px 0 rgba(255, 215, 0, 0.5);
+}
